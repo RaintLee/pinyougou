@@ -19,10 +19,9 @@
 	<!-- 直连监控中心服务器地址，如：address="192.168.1.216:7070" -->
 	<dubbo:monitor protocol="registry"/>
 
-	<!--&lt;!&ndash; 注解扫描 此处和dubbo耦合太紧 调用处必须用refence注解 &ndash;&gt;-->
-    <!--<dubbo:annotation package="com.pinyougou.sellergoods.service.impl" />-->
-	<!-- 用户服务接口 -->
-	<dubbo:service interface="com.pinyougou.sellergoods.service.BrandService" ref="brandService"/>
+	<!-- 注解扫描 此处和dubbo耦合太紧 调用处必须用refence注解 -->
+    <dubbo:annotation package="com.pinyougou.sellergoods.service.impl" />
+
    
    
 </beans>

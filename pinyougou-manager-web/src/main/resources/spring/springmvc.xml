@@ -29,4 +29,6 @@
 	  </mvc:message-converters>  
 	</mvc:annotation-driven>
 
+	<import resource="classpath:spring/dubbo-consumer.xml" />
+
 </beans>
