@@ -12,4 +12,13 @@
     <name>pinyougou-pojo</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-solr</artifactId>
+            <version>1.5.5.RELEASE</version>
+        </dependency>
+
+    </dependencies>
 </project>

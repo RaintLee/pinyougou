@@ -18,6 +18,10 @@
       <module>pinyougou-content-interface</module>
       <module>pinyougou-content-service</module>
       <module>pinyougou-portal-web</module>
+      <module>pinyougou-solr-util</module>
+    <module>pinyougou-search-interface</module>
+    <module>pinyougou-search-service</module>
+      <module>pinyougou-search-web</module>
   </modules>
 
   <name>pinyougou</name>
@@ -32,7 +36,7 @@
     <servlet-api.version>2.5</servlet-api.version>
     <dubbo.version>2.5.3</dubbo.version>
     <zookeeper.version>3.4.7</zookeeper.version>
-    <zkclient.version>0.3</zkclient.version>
+    <zkclient.version>0.1</zkclient.version>
     <mybatis.version>3.2.8</mybatis.version>
     <mybatis.spring.version>1.2.2</mybatis.spring.version>
     <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
@@ -108,7 +112,7 @@
         <version>${zookeeper.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.101tec</groupId>
+        <groupId>com.github.sgroschupf</groupId>
         <artifactId>zkclient</artifactId>
         <version>${zkclient.version}</version>
       </dependency>
