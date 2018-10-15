@@ -89,7 +89,7 @@ public class ContentServiceImpl implements ContentService {
 	public void delete(Long[] ids) {
 		for(Long id:ids){
 			//清除缓存
-			Long categoryId = contentMapper.selectByPrimaryKey(id).getCategoryId();			
+			Long categoryId = contentMapper.selectByPrimaryKey(id).getCategoryId();
 			redisTemplate.boundHashOps("content").delete(categoryId);
 			
 			contentMapper.deleteByPrimaryKey(id);
