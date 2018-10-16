@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.pinyougou.page.service.ItemPageService;
 import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojogroup.Goods;
 import com.pinyougou.search.service.ItemSearchService;
@@ -114,6 +115,12 @@ public class GoodsController {
 				List<TbItem> itemList = goodsService.findItemListByGoodsIdListAndStatus(ids, status);
 				//导入到solr
 				itemSearchService.importList(itemList);
+
+
+				//****生成商品详细页
+				for(Long goodsId:ids){
+					itemPageService.genItemHtml(goodsId);
+				}
 			}
 			return new Result(true, "成功");
         } catch (Exception e) {
@@ -121,4 +128,15 @@ public class GoodsController {
             return new Result(false, "失败");
         }
     }
+
+
+	@Reference(timeout=40000)
+	private ItemPageService itemPageService;
+
+	@RequestMapping("/genHtml")
+	public void genHtml(Long goodsId){
+
+		itemPageService.genItemHtml(goodsId);
+
+	}
 }
