@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.pinyougou.pojo.TbSpecification;
-import com.pinyougou.pojogroup.Specification;
+import com.pinyougou.pojo.group.Specification;
 import com.pinyougou.sellergoods.service.SpecificationService;
 import entity.PageResult;
 import entity.Result;

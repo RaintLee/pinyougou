@@ -2,7 +2,7 @@ package com.pinyougou.shop.controller;
 
 import java.util.List;
 
-import com.pinyougou.pojogroup.Goods;
+import com.pinyougou.pojo.group.Goods;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

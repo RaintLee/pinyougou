@@ -4,7 +4,7 @@ import java.util.List;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.pojo.TbItem;
-import com.pinyougou.pojogroup.Goods;
+import com.pinyougou.pojo.group.Goods;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;

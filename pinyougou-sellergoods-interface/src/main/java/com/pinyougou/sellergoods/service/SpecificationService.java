@@ -3,7 +3,7 @@ package com.pinyougou.sellergoods.service;
 import java.util.List;
 import java.util.Map;
 import com.pinyougou.pojo.TbSpecification;
-import com.pinyougou.pojogroup.Specification;
+import com.pinyougou.pojo.group.Specification;
 import entity.PageResult;
 /**
  * 规格说明书服务层接口

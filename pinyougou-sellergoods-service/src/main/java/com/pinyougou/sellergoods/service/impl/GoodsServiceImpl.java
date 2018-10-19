@@ -17,7 +17,7 @@ import com.pinyougou.pojo.TbItem;
 import com.pinyougou.pojo.TbItemCat;
 import com.pinyougou.pojo.TbItemExample;
 import com.pinyougou.pojo.TbSeller;
-import com.pinyougou.pojogroup.Goods;
+import com.pinyougou.pojo.group.Goods;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
