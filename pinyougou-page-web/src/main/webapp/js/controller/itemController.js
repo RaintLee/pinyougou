@@ -66,6 +66,24 @@ app.controller("itemController",function($scope){
 	$scope.addToCart=function(){
 		alert('SKUID:'+$scope.sku.id );		
 	}
+
+
+    //添加商品到购物车
+    $scope.addToCart=function(){
+        //alert('SKUID:'+$scope.sku.id );
+
+        $http.get('http://localhost:9107/cart/addGoodsToCartList.do?itemId='
+            +$scope.sku.id+'&num='+$scope.num ,{'withCredentials':true} ).success(
+            function(response){
+                if(response.success){
+                    location.href='http://localhost:9107/cart.html';
+                }else{
+                    alert(response.message);
+                }
+            }
+        );
+
+    }
 	
 	
 });
