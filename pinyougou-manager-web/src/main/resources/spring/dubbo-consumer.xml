@@ -28,7 +28,7 @@
 	<dubbo:application name="pinyougou-manager-web" />
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
 	<!-- 注册中心地址 -->
-	<dubbo:registry protocol="zookeeper" address="192.168.1.216:2181"/>
+	<!--<dubbo:registry protocol="zookeeper" address="192.168.1.216:2181"/>-->
 	<!-- 监控中心配置 -->
 	<!-- 监控中心协议，如果为protocol="registry"，表示从注册中心发现监控中心地址，
      否则直连监控中心 -->

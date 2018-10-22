@@ -11,7 +11,7 @@
     <dubbo:protocol name="dubbo" port="20885"></dubbo:protocol> 
     
 	<dubbo:application name="pinyougou-page-service"/>  
-    <dubbo:registry address="zookeeper://192.168.1.216:2181"/>
+
     <dubbo:annotation package="com.pinyougou.page.service.impl" />  
    
     <bean id="freemarkerConfig"
